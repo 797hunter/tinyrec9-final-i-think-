@@ -1,0 +1,17 @@
+# TinyRec v1
+# name: From Python
+# window: Notepad
+# origin: 10 20
+
+0.000 MOVE 640 380
+0.482 LEFT_DOWN 640 380
+0.610 LEFT_UP 700 420
+0.900 SCROLL 700 420 0 -1
+1.200 KEY_DOWN shift
+1.210 KEY_DOWN a
+1.260 KEY_UP a
+1.270 KEY_UP shift
+1.300 KEY_DOWN vk:186
+1.310 KEY_UP vk:186
+2.000 IMAGE_CLICK login.png conf=0.9 timeout=10 button=double onfail=skip
+3.000 IMAGE_WAIT ok.png region=0,0,500,500

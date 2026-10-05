@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <RootNamespace>TinyRec</RootNamespace>
+    <AssemblyName>TinyRec9</AssemblyName>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Assets\tinyrec.ico</ApplicationIcon>
+    <Version>9.0.0</Version>
+    <Product>TinyRec 9</Product>
+    <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+    <!-- pre-compiled code: faster start-up and no first-run hiccups during playback -->
+    <PublishReadyToRun>true</PublishReadyToRun>
+    <TieredPGO>true</TieredPGO>
+    <!-- WinForms is only used for screen info + screenshots; keep its global usings out of the way -->
+    <DisableImplicitNamespaceImports>true</DisableImplicitNamespaceImports>
+    <NoWarn>$(NoWarn);CS0618;CA1416;WFAC010</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core\TinyRec.Core.csproj" />
+    <PackageReference Include="OpenCvSharp4" Version="4.*" />
+    <PackageReference Include="OpenCvSharp4.runtime.win" Version="4.*" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\icons\*.png" />
+    <Resource Include="Assets\tinyrec.ico" />
+  </ItemGroup>
+</Project>

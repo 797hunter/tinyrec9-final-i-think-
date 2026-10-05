@@ -1,0 +1,59 @@
+{
+  "hotkeys": {
+    "record_toggle": "f8",
+    "play_toggle": "f9",
+    "autoclick_toggle": "f6",
+    "draw_toggle": "f7",
+    "panic": "f11",
+    "speed_up": "ctrl+alt+up",
+    "speed_down": "ctrl+alt+down",
+    "speed_reset": "ctrl+alt+0",
+    "mini_toggle": "f10"
+  },
+  "topmost_full": false,
+  "topmost_mini": true,
+  "start_mini": false,
+  "countdown": 3,
+  "trim_start": true,
+  "hide_drawings_while_playing": true,
+  "last_recording": "",
+  "loops": 0,
+  "loop_delay": 0.0,
+  "relative_to_window": false,
+  "autoclick": {
+    "button": "right",
+    "double": false,
+    "interval_ms": 50.0,
+    "jitter_ms": 5.0,
+    "hold_ms": 0.0,
+    "count": 10,
+    "mode": "points",
+    "points": [
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "order": "random",
+    "start_delay": 1.5
+  },
+  "appearance": "dark",
+  "accent": "blue",
+  "ui_scale": 1.0,
+  "record_moves": true,
+  "trim_end": true,
+  "auto_thin": false,
+  "show_indicator": true,
+  "during_run": "mini",
+  "mini_pos": null,
+  "library_sort": "newest",
+  "draw_color": "#ff4d5e",
+  "draw_width": 3,
+  "draw_tool": "rect",
+  "ac_autostart": false,
+  "ac_show_spots": true
+}
